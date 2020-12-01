@@ -11,7 +11,7 @@ npm start
 ```
 
 ### testing 
-/GET
+Open the homepage
 ```
 curl http://localhost:3000
 ```
@@ -19,6 +19,6 @@ curl http://localhost:3000
 
 /POST
 ```
-curl -d 'insult=i do not like your shoes' -X POST  https://kata-logging-service.herokuapp.com
+curl -d 'msg=ugly gerbil' -X POST  https://kata-logging-service.herokuapp.com
 ```
 

@@ -24,13 +24,13 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
     const payload = {
-        insult: req.body.insult,
+        msg: req.body.msg,
         time: dateFormat(new Date()),
     }
 
     const shouldFail = shouldIFail()
-    shouldFail ? payload.result = 500 : payload.result = 200
-    console.log(`payload is ${payload.insult} - ${payload.time} - ${payload.result}`)
+    shouldFail ? payload.result = 'FAILED' : payload.result = 'SUCCESS'
+    console.log(`payload is ${payload.msg} - ${payload.time} - ${payload.result}`)
     logs.push(payload)
     shouldFail ? res.status(500).send({message: 'Something went wrong - Please try later'}) : res.sendStatus(200)
     
