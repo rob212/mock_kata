@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
-const port = 3000
+const port = process.env.PORT || 3000
 
 const logs = []
 
