@@ -32,7 +32,7 @@ app.post('/', (req, res) => {
     shouldFail ? payload.result = 'FAILED' : payload.result = 'SUCCESS'
     console.log(`payload is ${payload.msg} - ${payload.time} - ${payload.result}`)
     logs.push(payload)
-    shouldFail ? res.status(500).send({message: 'Something went wrong - Please try later'}) : res.sendStatus(200)
+    shouldFail ? res.status(500).send({message: 'Something went wrong - Please try later'}) : res.sendStatus(201)
     
 })
 
