@@ -19,5 +19,6 @@ curl http://localhost:3000
 
 /POST
 ```
-curl -d 'insult=I do not care for your shoes' -X POST  http://localhost:3000
+curl -d 'insult=i do not like your shoes' -X POST  https://kata-logging-service.herokuapp.com
 ```
+
