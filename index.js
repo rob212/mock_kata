@@ -1,6 +1,6 @@
-import express from 'express'
-import bodyParser from 'body-parser'
-import dateFormat from 'dateformat'
+const express = require('express')
+const bodyParser = require('body-parser')
+const dateFormat = require('dateformat')
 
 
 const app = express()
